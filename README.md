@@ -2,7 +2,7 @@
 
 https://danieltrz.github.io/CYBER-BINARY-LAB/
 
-pl
+pl<br>
 CYBER BINARY LAB
 
 Interaktywny moduł edukacyjny w stylistyce cyber‑hacker ops, który uczy podstaw systemu binarnego w prosty i efektowny sposób. Projekt zawiera konwertery liczb, objaśniacz krok‑po‑kroku oraz mini‑grę “Binary Cracker”.
