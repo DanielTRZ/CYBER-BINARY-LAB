@@ -26,7 +26,7 @@ const TEXTS = {
         Wpisz liczbę binarną → DEC – wpisz liczbę w systemie binarnym (BIN), aby otrzymać jej wartość dziesiętną (DEC).`,
         pkon1:`Rozbij kod – objaśniacz
          Wpisz liczbę, aby zobaczyć krok po kroku, jak składa się z poszczególnych bitów i jak jest reprezentowana w systemie binarnym.`,
-        invalidBinary: "Niepoprawny zapis binarny."
+        invalidBinary: "Niepoprawny zapis binarny.",
     },
     EN: {
         title: "CYBER BINARY LAB",
@@ -55,7 +55,7 @@ const TEXTS = {
         pkon1: `Break the Code – Explainer
         Enter a number to see step by step how it is composed of individual bits and how it is represented in the binary system.`,
 
-        invalidBinary: "Invalid binary format."
+        invalidBinary: "Invalid binary format.",
 
     }
 };
@@ -107,13 +107,14 @@ function applyTexts(){
     const t = TEXTS[CURRENT_LANG];
     siteTitle.innerText = t.title;
     subtitle.innerText = t.subtitle;
-
+// Sekcja: Jak działa system binarny?
     el('hHow').innerText = t.howTitle;
     el('pHow').innerText = t.howText;
-    el('pkon').innerText = t.howTitle;
-    el('pkon').innerText = t.howText;
-    el('pkon1').innerText = t.howTitle;
-    el('pkon1').innerText = t.howText;
+    
+    el('pkon').innerText = t.pkon;
+   
+    el('pkon1').innerText = t.pkon1;
+   
 
     el('hConverter').innerText = t.converterTitle;
     decimalInput.placeholder = t.decimalPlaceholder;

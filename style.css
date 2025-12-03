@@ -70,12 +70,12 @@ body{
 }
 
 /* header + topbar */
-header{ padding:18px 12px; text-align:center; position:relative; z-index:2;}
-.topbar{ display:flex; gap:16px; align-items:center; justify-content:center; flex-wrap:wrap;}
-h1{ margin:0; font-size:2.2rem; color:var(--red); text-shadow:0 0 10px var(--red);}
-.subtitle{ color:var(--yellow); margin-top:6px; letter-spacing:2px;}
+header{ padding:18px 16px; text-align:center; position:relative; z-index:2;}
+.topbar{ display:flex; gap:16px; align-items:center; justify-content:center; flex-wrap:wrap;  }
+h1{ margin:0; font-size:4.2rem; color:var(--red); text-shadow:0 0 10px var(--red); }
+.subtitle{ color:var(--yellow); margin-top:20px; letter-spacing:2px; font-size: 22px}
 /* footer */
-footer { padding:20px 20px; text-align:center; position:relative; z-index:2; color:red;  text-shadow:0 0 14px rgba(255,234,0,0.6); font-size: 20px; 
+footer { padding:20px 20px; text-align:center; position:relative; z-index:2; color:red;  text-shadow:0 0 14px rgba(255,234,0,0.6); font-size: 16px; 
  }
 
 /* lang switch */
