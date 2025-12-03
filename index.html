@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CYBER BINARY LAB</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== INTRO / FULLSCREEN ALERT ===== -->
+<div id="introOverlay" class="intro-overlay">
+    <div class="intro-inner">
+        <div class="flash"></div>
+        <div class="intro-text small">ARASAKA SYSTEM</div>
+        <div class="intro-text large glitch" data-text="NR-SEC-E7-REDLINE">NR-SEC-E7-REDLINE</div>
+        <div class="intro-text med">UNAUTHORIZED ACCESS DETECTED</div>
+        <div class="intro-sub med" id="introStage">INITIATING BLACK ICE COUNTERMEASURES...</div>
+    </div>
+</div>
+
+<!-- PAGE -->
+<div class="glitch-bg"></div>
+
+<header>
+    <div class="topbar">
+        <h1 id="siteTitle" class="glitch" data-text="CYBER BINARY LAB">CYBER BINARY LAB</h1>
+        <div class="lang-switch">
+            <button id="btnPL" class="lang active">PL</button>
+            <button id="btnEN" class="lang">EN</button>
+        </div>
+    </div>
+    <p id="subtitle" class="subtitle">SYSTEM BINARNY • HACKER OPS • ARASAKA MODE</p>
+</header>
+
+<main>
+    <!-- Jak działa -->
+    <section class="module">
+        <h2 id="hHow">🔧 Jak działa system binarny?</h2>
+        <p id="pHow" class="description">
+System binarny to sposób, w jaki komputer zapisuje liczby za pomocą tylko dwóch cyfr: 0 i 1.
+0 oznacza OFF, a 1 oznacza ON.
+Każde miejsce cyfry (bit) ma swoją wartość, która rośnie przez podwajanie: 1, 2, 4, 8, 16, 32, 64, 128…
+To są kolejne potęgi liczby 2 (2⁰, 2¹, 2²…).
+System binarny nie kończy się na 128 — kolejne wartości powstają zawsze przez pomnożenie poprzedniej liczby przez 2.
+Aby odczytać liczbę binarną, dodajemy wartości tych bitów, które mają ustawione 1.
+        </p><br>
+        <div id="binary-demo" class="bit-line"></div>
+        <br>
+    </section>
+
+    <!-- Konwerter -->
+    <section class="module">
+        <h2 id="hConverter">🟥 Konwerter liczbowy</h2>
+        <p id="pkon" class="description">
+        Konwerter liczbowy – proste narzędzie do przeliczania liczb między systemem binarnym a dziesiętnym.
+        E → BIN – wpisz liczbę w systemie dziesiętnym (DEC), aby zobaczyć jej odpowiednik w systemie binarnym (BIN).
+        Wpisz liczbę binarną → DEC – wpisz liczbę w systemie binarnym (BIN), aby otrzymać jej wartość dziesiętną (DEC).
+        </p>
+        
+        <div class="converter">
+            <input id="decimalInput" type="number" placeholder="Wpisz liczbę dziesiętną" />
+            <button id="toBinBtn">→ BIN</button>
+
+            <input id="binaryInput" type="text" placeholder="Wpisz liczbę binarną" />
+            <button id="toDecBtn">→ DEC</button>
+        </div>
+        <div id="conversionOutput" class="output"></div>
+    </section>
+
+    <!-- Objaśniacz -->
+    <section class="module">
+        <h2 id="hExplain">🟨 Rozbij kod – objaśniacz</h2>
+        <p id="pkon1" class="description">
+        Rozbij kod – objaśniacz  <br>
+         Wpisz liczbę, aby zobaczyć krok po kroku, jak składa się z poszczególnych bitów i jak jest reprezentowana w systemie binarnym.
+
+        </p>
+        <input id="explainInput" type="number" placeholder="Liczba do rozbicia" />
+        <button id="explainBtn">Wyjaśnij krok po kroku</button>
+        <div id="explainOutput" class="output"></div>
+    </section>
+
+    <!-- Mini gra -->
+    <section class="module">
+        <h2 id="hGame">⚡ Binary Cracker – Mini Gra</h2>
+        <p id="pGame" class="description">Złam kod zanim system bezpieczeństwa zamknie dostęp!</p>
+        <div class="game-controls">
+            <button id="genChallengeBtn">Wygeneruj kod</button>
+            <div id="challengeBox" class="challenge"></div>
+            <input id="challengeAnswer" type="text" placeholder="Podaj wynik binarny" />
+            <button id="checkChallengeBtn">Sprawdź</button>
+        </div>
+        <div id="challengeResult" class="output"></div>
+    </section>
+    
+    <footer>
+    <h2 id="system">[ Daniel Trzeciński ]  ::  system.online();
+</h2>
+    
+    
+</footer>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
